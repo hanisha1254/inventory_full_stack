@@ -1,141 +1,70 @@
-📦 AI Inventory Demand Predictor
-🚀 Overview
+# Getting Started with Create React App
 
-This project is a full-stack inventory management system that allows users to:
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Add and manage products
-Track inventory levels
-Predict future demand using a simple Machine Learning model
+## Available Scripts
 
-The goal was to build a clean, modular, and reliable system using a modern tech stack while keeping the design simple and maintainable.
+In the project directory, you can run:
 
-🏗️ Architecture
+### `npm start`
 
-The system follows a layered client-server architecture:
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-React Frontend → Flask API → SQLite Database
-                             → ML Prediction Service
-Components:
-Frontend (React):
-Handles UI and user interactions
-Displays products and predictions
-Sends API requests to backend
-Backend (Flask):
-Exposes REST APIs
-Handles business logic
-Validates input data
-Database (SQLite):
-Stores product information
-ML Service:
-Predicts demand using Linear Regression
-🧠 Tech Stack
-Layer	Technology
-Frontend	React
-Backend	Flask (Python)
-Database	SQLite (SQLAlchemy)
-ML Model	Scikit-learn
-Validation	Marshmallow
-📂 Project Structure
-inventory-ai-app/
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-backend/
-  app/
-    routes/        # API endpoints
-    models/        # Database models
-    services/      # ML logic
-    schemas/       # Validation schemas
-    __init__.py
-  run.py
+### `npm test`
 
-frontend/
-  src/
-    App.js
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-README.md
-agents.md
-⚙️ Setup Instructions
-🔹 Backend Setup
-cd backend
-pip install -r requirements.txt
-python run.py
-🔹 Frontend Setup
-cd frontend
-npm install
-npm start
-✅ Features
-Add new products
-View all products
-Delete products
-Predict demand using ML model
-Clean UI dashboard
-Real-time updates (no page reload)
-🧠 Key Technical Decisions
-1. Flask for Backend
-Chosen for simplicity, flexibility, and quick API development
-2. SQLite Database
-Lightweight and easy to set up for a small-scale application
-3. Modular Architecture
+### `npm run build`
 
-Separated into:
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Routes (API layer)
-Models (data layer)
-Services (business logic)
-Schemas (validation)
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-Benefits:
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Maintainability
-Scalability
-Easy debugging
-4. Simple ML Model
-Used Linear Regression to:
-Keep system lightweight
-Ensure interpretability
-Avoid over-engineering
-🛡️ Interface Safety & Validation
-Input validation implemented using Marshmallow schemas
-Prevents invalid or missing data
-Ensures consistent API structure
-Avoids runtime errors
-🔍 Observability
-Error handling implemented in frontend and backend
-Clear API error messages
-Loading and error states handled in UI
-🔁 Change Resilience
-Modular code design ensures new features can be added easily
-Changes in one layer do not affect others
-Clear separation of concerns
-🧪 Verification
-APIs tested manually using browser/Postman
-Edge cases handled:
-Missing product
-Invalid inputs
-Frontend reflects real-time updates
-🤖 AI Usage
+### `npm run eject`
 
-AI tools were used for:
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-Generating initial boilerplate code
-Structuring backend architecture
-Debugging errors
-Improving UI design
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Important Note:
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-All AI-generated code was:
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-Carefully reviewed
-Manually tested
-Refactored for clarity and correctness
-⚖️ Tradeoffs
-Used simple Linear Regression instead of advanced time-series models
-No authentication system implemented
-No pagination for large datasets
-Minimal UI styling to prioritize functionality
-🔮 Future Improvements
-Add authentication (JWT-based login)
-Use advanced ML models (ARIMA, LSTM)
-Add analytics dashboard with charts
-Implement pagination and filtering
-Deploy on cloud (AWS / Render)
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
